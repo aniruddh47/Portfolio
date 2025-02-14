@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Andy's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         /* General styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Montserrat, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2a2a7e12;
-            color: #333;
+            background: linear-gradient(135deg, #6a0dad, #4b0082);
+            color: #fff;
+            overflow-x: hidden;
         }
 
-        /* Navbar styles */
+        /* Animated background */
+        .animated-bg {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #2a2a72;
-            color: #fff;
-            padding: 15px 30px;
-            position: sticky;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 40px;
+            position: fixed;
+            width: 100%;
             top: 0;
             z-index: 1000;
         }
 
         .navbar h1 {
-            margin: 0;
-            font-size: 24px;
+            font-size: 28px;
         }
 
         .navbar ul {
             list-style: none;
-            margin: 0;
-            padding: 0;
             display: flex;
         }
 
@@ -44,45 +55,38 @@
         }
 
         .navbar ul li a {
-            color: #d2d2d2;
+            color: #fff;
             text-decoration: none;
             font-size: 16px;
         }
 
         .navbar ul li a:hover {
-            text-decoration: underline;
+            color: #ffcc00;
         }
 
-        /* Section styles */
+        /* Sections */
         section {
-            padding: 50px 30px;
+            padding: 60px 40px;
+            text-align: center;
+            min-height: 100vh;
         }
 
         .home {
-            background: url('/mnt/data/Screenshot_2024_0308_232818.jpg') no-repeat center center;
-            background-size: cover;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: #3f179b;
-            padding: 20px;
         }
 
-        .home h2 {
-            font-size: 36px;
+        .home img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             margin-bottom: 20px;
         }
 
-        .home p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
+        /* Card Layout */
         .card-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -90,23 +94,21 @@
         }
 
         .card {
-            background-color: #4719c790;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
             padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
         }
 
-        .card h3 {
-            margin-top: 0;
-            color: #2a2a72;
+        .card:hover {
+            transform: scale(1.05);
         }
 
         footer {
-            background-color: #2a2a72;
-            color: #fff;
-            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
             padding: 15px 0;
-            margin-top: 20px;
+            text-align: center;
         }
 
         footer p {
@@ -115,34 +117,33 @@
         }
     </style>
 </head>
-<body>
 
+<body>
+    <div class="animated-bg"></div>
     <header class="navbar">
-        <h1>My Portfolio</h1>
+        <h1>Andy's Portfolio</h1>
         <ul>
             <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#internships">Internships</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
     <section class="home">
         <h2>Welcome to My Portfolio</h2>
-        <p>Hello! I am Aniruddh Kumbhar, and this is my portfolio. Here, you'll find details about my qualifications, events I've participated in, certifications, internships, and projects.</p>
+        <img src="profile.jpg" alt="Aniruddh Kumbhar">
+        <p>Hello! I am Aniruddh Kumbhar, passionate about technology, innovation, and software development.</p>
     </section>
 
     <section id="qualifications">
         <h2>Qualifications</h2>
         <div class="card-container">
             <div class="card">
-                <h3>Bachelor's Degree in Computer Science</h3>
+                <h3>Bachelor's in Computer Science</h3>
                 <p>Graduated from Sanjay Ghodawat University.</p>
-            </div>
-            <div class="card">
-                <h3>High School</h3>
-                <p>Completed my schooling from Kedari Redekar Public School in 2020.</p>
             </div>
         </div>
     </section>
@@ -151,8 +152,8 @@
         <h2>Participated Events</h2>
         <div class="card-container">
             <div class="card">
-                <h3>Hackathon 2023</h3>
-                <p>Participated in SIH hackthon got Qualified</p>
+                <h3>SIH Hackathon</h3>
+                <p>Developed a solution for real-world problems.</p>
             </div>
         </div>
     </section>
@@ -162,25 +163,7 @@
         <div class="card-container">
             <div class="card">
                 <h3>Web Development</h3>
-                <p>Completed a course from Youtube.</p>
-            </div>
-            <div class="card">
-                <h3>Data Science</h3>
-                <p>Earned a certification in Friends.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="internships">
-        <h2>Internships</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Software Developer Intern</h3>
-                <p>Worked at [Company Name] for [Duration].</p>
-            </div>
-            <div class="card">
-                <h3>Data Analyst Intern</h3>
-                <p>Completed a project on [Project Description] at [Company Name].</p>
+                <p>Certified in full-stack development.</p>
             </div>
         </div>
     </section>
@@ -189,19 +172,22 @@
         <h2>Projects</h2>
         <div class="card-container">
             <div class="card">
-                <h3>Portfolio Website</h3>
-                <p>Designed and developed a personal portfolio website.</p>
-            </div>
-            <div class="card">
-                <h3>E-commerce App</h3>
-                <p>Created an website for movie theater mern stack.</p>
+                <h3>Movie Theater Website</h3>
+                <p>Built an online movie ticket booking system.</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Aniruddh. All rights reserved.</p>
-    </footer>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: aniruddh.kumbhar@example.com</p>
+        <p>GitHub: <a href="https://github.com/aniruddh47" target="_blank">github.com/aniruddh47</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aniruddh-kumbhar-7691b92a5" target="_blank">LinkedIn</a></p>
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Aniruddh Kumbhar. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
