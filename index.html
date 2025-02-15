@@ -1,193 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        /* General styles */
-        body {
-            font-family: Montserrat, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #6a0dad, #4b0082);
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        /* Animated background */
-        .animated-bg {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
-            filter: blur(5px);
-            z-index: -1;
-        }
-
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 15px 40px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar h1 {
-            font-size: 28px;
-        }
-
-        .navbar ul {
-            list-style: none;
-            display: flex;
-        }
-
-        .navbar ul li {
-            margin-left: 20px;
-        }
-
-        .navbar ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .navbar ul li a:hover {
-            color: #ffcc00;
-        }
-
-        /* Sections */
-        section {
-            padding: 60px 40px;
-            text-align: center;
-            min-height: 100vh;
-        }
-
-        .home {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .home img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        /* Card Layout */
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-    </style>
+    <title>Your Name - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <div class="animated-bg"></div>
-    <header class="navbar">
-        <h1>Andy's Portfolio</h1>
-        <ul>
-            <li><a href="#qualifications">Qualifications</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#internships">Internships</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <header>https
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="home">
-        <h2>Welcome to My Portfolio</h2>
-        <img src="profile.jpg" alt="Aniruddh Kumbhar">
-        <p>Hello! I am Aniruddh Kumbhar, passionate about technology, innovation, and software development.</p>
-    </section>
-
-    <section id="qualifications">
-        <h2>Qualifications</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Bachelor's in Computer Science</h3>
-                <p>Graduated from Sanjay Ghodawat University.</p>
+    <main>
+        <section id="hero">
+            <h1>ANIRUDDH</h1>
+            <p>Web Developer & Designer</p>
+            <div class="social-links">
+                <a href="https://github.com/aniruddh47" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/aniruddh-kumbhar-7691b92a5" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="aniruddh4722@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="events">
-        <h2>Participated Events</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>SIH Hackathon</h3>
-                <p>Developed a solution for real-world problems.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hey there! I’m a passionate AI and ML wizard (self-proclaimed) who loves teaching machines to think—well, sort of. I build intelligent systems that try their best not to crash while making life a little smarter. With a background in computer science and years of experience debugging why my models suddenly think a cat is a toaster, I’m always up for new challenges. Whether it’s training neural networks, wrangling data like a cowboy, or convincing AI not to go rogue, I’m here for it. Let’s build the future—hopefully without too many 404 errors!</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>SQL</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2> Projects</h2>
+            <div class="project">
+                <h3>Diabetes predection</h3>
+                <p>I have make an ML based model which can predict whether a person has diabetes or not.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Certified in full-stack development.</p>
+            <div class="project">
+                <h3>Gen AI </h3>
+                <p>Built an  Gen AI chat bot in a workshop which is similar to chatgpt.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Movie Theater Website</h3>
-                <p>Built an online movie ticket booking system.</p>
+            <div class="project">
+                <h3>2048 </h3>
+                <p>Made an 2048 Game using python.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: aniruddh.kumbhar@example.com</p>
-        <p>GitHub: <a href="https://github.com/aniruddh47" target="_blank">github.com/aniruddh47</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aniruddh-kumbhar-7691b92a5" target="_blank">LinkedIn</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Aniruddh Kumbhar. All rights reserved.</p>
+        <p>&copy; 2025 Aniruddh All rights reserved.</p>
     </footer>
 </body>
-
 </html>
+
