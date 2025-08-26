@@ -148,6 +148,22 @@ button:hover {
   background-color: #8a6cd5;
 }
 
+.resume-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color); /* Use primary color for consistency */
+  color: var(--background-color);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #8a6cd5; /* A slightly darker shade of primary color */
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -178,4 +194,3 @@ footer {
     font-size: 1.5rem;
   }
 }
-
