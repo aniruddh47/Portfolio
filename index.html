@@ -3,79 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANDY's Personal Portfolio</title>
+    <title>Aniruddh Kumbhar - AI/ML Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>ANIRUDDH</h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#journey">Journey</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>ANIRUDDH</h1>
-            <p>A guy who codes using AI</p>
-            <div class="social-links">
-                <a href="https://github.com/aniruddh47" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="www.linkedin.com/in/aniruddh-kumbhar-7691b92a5" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                <a href="aniruddh4722@gmail.com"><i class="fas fa-envelope"></i></a>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Aniruddh</h1>
+                <p>AI & ML Developer | Building Intelligent Systems</p>
+                <p class="tagline">A guy who codes using AI to make smarter solutions</p>
+                <div class="social-links">
+                    <a href="https://github.com/aniruddh47" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aniruddh-kumbhar-7691b92a5" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:aniruddh4722@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hey there! I’m a passionate AI and ML wizard (self-proclaimed) who loves teaching machines to think—well, sort of. I build intelligent systems that try their best not to crash while making life a little smarter. With a background in computer science and years of experience debugging why my models suddenly think a cat is a toaster, I’m always up for new challenges. Whether it’s training neural networks, wrangling data like a cowboy, or convincing AI not to go rogue, I’m here for it. Let’s build the future—hopefully without too many 404 errors!</p>
-            <a href="Resume.pdf" download="Resume.pdf" class="resume-button">Download Resume</a>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>C++</li>
-                <li>C</li>
-                <li>SQL</li>
-                <li>Git</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2> Projects</h2>
-            <div class="project">
-                <h3>End to End medical chat bot</h3>
-                <p>Build an Medical chat bot which can answer questions about any medical topic</p>
-            </div>
-            <div class="project">
-                <h3>VoiForge-AI</h3>
-                <p>A chatbot which can change any voice input to a desired voice output.</p>
-            </div>
-            <div class="project">
-                <h3>Friday Chatbot</h3>
-                <p>A Bot which has three types of modes text to speech,speech to text and a conversational mode which can remember conversations</p>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm an AI/ML developer and computer vision engineer with a Artificial Intelligence and Machine Learning background. I build intelligent systems, vision-based inspection tools, chatbots, and data-driven applications, with hands-on experience in neural networks, voice AI, and microservice-based solutions.</p>
+                <a href="Resume aniruddh.pdf" download="Resume aniruddh.pdf" class="resume-button">Download Resume</a>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Programming</h3>
+                        <p>Python, C++, C</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>AI/ML</h3>
+                        <p>TensorFlow, PyTorch, OpenCV, YOLO, Chatbots, NLP, Voice AI, LLMs</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend</h3>
+                        <p>Microservices, FastAPI, Django, SQL, REST APIs</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Visualization & BI</h3>
+                        <p>Power BI, Tableau, Excel</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Tools & Platforms</h3>
+                        <p>GitHub, Git, ChatGPT, Claude, Cursor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Timeline Section -->
+        <section id="journey" class="journey">
+            <div class="container">
+                <h2>My Development Journey</h2>
+                
+                <!-- Phase 1: Individual Projects -->
+                <div class="journey-phase">
+                    <div class="phase-header">
+                        <h3>Phase 1: Getting Started</h3>
+                        <p>Building Projects Independently</p>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4>VoiForge-AI</h4>
+                                <span class="badge individual">Individual</span>
+                            </div>
+                            <p>A voice transformation chatbot that converts any voice input to a desired voice output. Showcasing advanced audio processing and AI capabilities.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/SinVegeta/VoiForge-AI" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4>Friday Chatbot</h4>
+                                <span class="badge individual">Individual</span>
+                            </div>
+                            <p>A conversational bot with three modes: text-to-speech, speech-to-text, and interactive chat with conversation memory. Demonstrates multi-modal AI integration.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/SinVegeta/fridaybot" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4>AI Doctor</h4>
+                                <span class="badge individual">Individual</span>
+                            </div>
+                            <p>An intelligent medical chatbot that provides answers and information about medical topics. Built to assist with healthcare-related queries using AI.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/aniruddh47/AI_DOCTOR" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2: Nexanova Protech Internship -->
+                <div class="journey-phase">
+                    <div class="phase-header">
+                        <h3>Phase 2: First Internship</h3>
+                        <p>Nexanova Protech Internship</p>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4>Mock Evaluation System</h4>
+                                <span class="badge internship">Internship</span>
+                            </div>
+                            <p>Developed a comprehensive mock evaluation platform for assessing student performance. Integrated with backend systems for data management and analytics.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/aniruddh47/mock-eval" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4>Training Institute Microservices</h4>
+                                <span class="badge internship">Internship</span>
+                            </div>
+                            <p>Designed and implemented a microservices architecture for a training institute ERP system. Built scalable backend services for institute management.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/aniruddh47/ERP/tree/master/OneDrive/Desktop/tassk/training_institute_microservices" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3: Parallel Development -->
+                <div class="journey-phase">
+                    <div class="phase-header">
+                        <h3>Phase 3: Growth Phase</h3>
+                        <p>Continued Learning While Building</p>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4>Clothing Store Platform</h4>
+                                <span class="badge individual">Individual</span>
+                            </div>
+                            <p>Built a full-featured e-commerce platform for clothing retail. Demonstrates full-stack development skills with product management and user authentication.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/aniruddh47/Clothing_store" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 4: Final Year & Advanced Projects -->
+                <div class="journey-phase">
+                    <div class="phase-header">
+                        <h3>Phase 4: Advanced AI Systems</h3>
+                        <p>Final Year Project & Emerging Internships</p>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4>CampusCoreAI - Multi-Agent Voice System</h4>
+                                <span class="badge fyp">Final Year Project</span>
+                            </div>
+                            <p>A sophisticated multi-agent AI system for college campus automation. Developed one of the core AI agents, demonstrating advanced natural language processing and voice interaction capabilities.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/aniruddh47/ai-voice-agent" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tata Motors Internship Projects Section -->
+                    <div class="confidential-section">
+                        <h3>Tata Motors Dharwad On-Site Internship</h3>
+                        <p>Industrial Automation & AI projects focused on factory automation, data ownership, safety workflows, and real-time quality inspection.</p>
+                        <div class="confidential-grid">
+                            <article class="confidential-card">
+                                <div class="project-header">
+                                    <h4>Smart Water Meter Dashboard</h4>
+                                    <span class="badge industrial">IoT</span>
+                                </div>
+                                <p>Developed a Raspberry Pi based edge monitoring system that reads cumulative water consumption from an industrial Modbus water meter and securely sends the data directly to AWS S3. The solution removes dependency on third-party gateways, improves control over raw meter data, and enables direct cloud integration for consumption analysis.</p>
+                                <p class="tech-stack">Raspberry Pi, Modbus, Python, AWS S3, Industrial IoT</p>
+                            </article>
+
+                            <article class="confidential-card">
+                                <div class="project-header">
+                                    <h4>Leaf Spring Orientation</h4>
+                                    <span class="badge industrial">Vision AI</span>
+                                </div>
+                                <p>Built an AI-based vision inspection system for automotive assembly lines to verify leaf spring component orientation and sequence. Using a camera, YOLO model, and PLC communication, the system checks the required Arrow - Front - Arrow - Rear flow and signals faults when incorrect placement is detected.</p>
+                                <p class="tech-stack">YOLO, OpenCV, PLC Integration, Python, Computer Vision</p>
+                            </article>
+
+                            <article class="confidential-card">
+                                <div class="project-header">
+                                    <h4>RFID Based Tool Maintenance System</h4>
+                                    <span class="badge industrial">RFID</span>
+                                </div>
+                                <p>Designed a web-based RFID tool tracking system to replace manual registers and spreadsheets with automated identification, real-time visibility, and improved accuracy. Added a smart sticker printing module to generate tool labels containing calibration and maintenance information for better shop-floor traceability.</p>
+                                <p class="tech-stack">RFID, Web Application, Database, Label Printing, Tool Management</p>
+                            </article>
+
+                            <article class="confidential-card">
+                                <div class="project-header">
+                                    <h4>AI HIRA Risk Assessment Chatbot</h4>
+                                    <span class="badge industrial">GenAI</span>
+                                </div>
+                                <p>Created an AI-assisted HIRA workflow using Streamlit and the Gemini API. Users describe an industrial activity in natural language, and the chatbot extracts hazard information, applies rule-based risk calculations, prepares structured assessments, and generates standardized Excel and PDF reports.</p>
+                                <p class="tech-stack">Streamlit, Gemini API, Python, Excel/PDF Reports, Risk Assessment</p>
+                            </article>
+
+                            <article class="confidential-card">
+                                <div class="project-header">
+                                    <h4>Email Automation</h4>
+                                    <span class="badge industrial">Automation</span>
+                                </div>
+                                <p>Built an automation workflow to streamline repetitive email communication and reduce manual follow-up effort. The system helped organize message handling, trigger routine responses, and improve consistency in daily reporting tasks.</p>
+                                <p class="tech-stack">Python, Email Automation, Workflow Automation, Reporting</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
+                <div class="contact-form">
+                    <a href="https://form.typeform.com/to/pPFyMlHT" target="_blank" rel="noopener noreferrer" class="submit-btn">Send Message</a>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Aniruddh All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2026 Aniruddh Kumbhar. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
